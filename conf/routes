@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET		/products/:ean				controllers.Products.show(ean: Long)
+GET		/barcode/:ean				controllers.Barcodes.barcode(ean: Long)
 
 GET		/products					controllers.Products.list
 
